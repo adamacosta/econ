@@ -1,0 +1,18 @@
+Package: econ
+Title: Economic Indicators Reports by the US Census Bureau
+Version: 0.1.0.9000
+Date: 2015-08-18
+Authors@R: person(
+  "Adam", "Acosta",
+  email = "adam.acosta@gatech.edu",
+  role = c("aut", "cre"))
+Description: Includes the datasets salesinventories, housing, and construction.
+License: CC0
+LazyData: TRUE
+Depends:
+  R (>= 3.2.0)
+Suggests:
+  dplyr,
+  tidyr,
+  lubridate
+URL: http://github.com/adamacosta/econ
