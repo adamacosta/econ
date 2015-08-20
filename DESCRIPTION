@@ -6,7 +6,8 @@ Authors@R: person(
   "Adam", "Acosta",
   email = "adam.acosta@gatech.edu",
   role = c("aut", "cre"))
-Description: Includes the datasets salesinventories, housing, and construction.
+Description: Includes the datasets nsror, salesinventories, housing, and 
+  construction.
 License: CC0
 LazyData: TRUE
 Depends:
