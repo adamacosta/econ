@@ -32,6 +32,7 @@ nsror$period <- sub('Q3-', 'Jul-1-', nsror$period)
 nsror$period <- sub('Q4-', 'Oct-1-', nsror$period)
 
 nsror <- nsror %>%
-    mutate(period = mdy(period))
+    mutate(period = mdy(period)) %>%
+    tbl_df()
 
 save(nsror, file = file.path('data', 'nsror.rda'))

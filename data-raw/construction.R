@@ -24,6 +24,7 @@ construction <- read.csv(file.path('data-raw', 'raw', inFiles[1])) %>%
 construction$period <- sub('-', '-1-', construction$period)
 
 construction <- construction %>%
-    mutate(period = mdy(period))
+    mutate(period = mdy(period)) %>%
+    tbl_df()
 
 save(construction, file = file.path('data', 'construction.rda'))

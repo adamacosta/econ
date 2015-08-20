@@ -64,6 +64,7 @@ salesinventories <- read.csv(file.path('data-raw', 'raw', inFiles[1])) %>%
 salesinventories$period <- sub('-', '-1-', salesinventories$period)
 
 salesinventories <- salesinventories %>%
-    mutate(period = mdy(period))
+    mutate(period = mdy(period)) %>%
+    tbl_df()
 
 save(salesinventories, file = file.path('data', 'salesinventories.rda'))

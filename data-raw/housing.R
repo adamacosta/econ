@@ -22,6 +22,7 @@ housing$period <- sub('Q3-', 'Jul-1-', housing$period)
 housing$period <- sub('Q4-', 'Oct-1-', housing$period)
 
 housing <- housing %>%
-    mutate(period = mdy(period))
+    mutate(period = mdy(period)) %>%
+    tbl_df()
 
 save(housing, file = file.path('data', 'housing.rda'))
